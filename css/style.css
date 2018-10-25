@@ -1,0 +1,28 @@
+body {
+    
+    background-color: antiquewhite;
+
+}
+
+
+h1 {
+    
+   margin-left: 50%;
+    margin-top: 10%;
+}
+.l img{
+    width: 300px;
+    height: 300px;
+}
+table{
+    border: solid black 1px;
+    width: 60%;
+    margin: auto;
+}
+tr{
+    border: solid black 1px;
+    background: red;
+}
+td{
+    padding: 10px;
+};

@@ -1,20 +1,29 @@
-<?php require_once "nav.php"; ?>
+<!doctype html>
+<html>
 
-<!-- Continue HTML -->
-<h2>Login</h2>
-<form method="post" action="login.php">
-<label>E-mail
+<head>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+
+    <?php require_once "nav.php"; ?>
+
+    <!-- Continue HTML -->
+    <h2>Login</h2>
+    <form method="post" action="login.php">
+        <label>E-mail
 	<input type="email" name="email"  value="" required><br>
 </label>
-	<br>
-<label>Password
+        <br>
+        <label>Password
 	<input type="password" name="pw" value="" required><br>
 </label>
-<br>
-<input type="submit" name="submit" value="Submit">  
-</form>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
 
-<?php
+    <?php
 
 if(isset($_POST['submit'])){
 
@@ -59,3 +68,6 @@ if(isset($_POST['submit'])){
 
 }
 ?>
+</body>
+
+</html>

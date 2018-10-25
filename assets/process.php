@@ -1,13 +1,22 @@
 <?php
+$t = $_POST["title"];
 $a = $_FILES["audio"];
-$m = "audio/".a["name"];
+$m = "audio/".$a["name"];
 
 move_uploaded_file($a["tmp_name"],$m);
 
+$i = $_FILES["image"];
+$s = "image/".$i["name"];
+
+move_uploaded_file($i["tmp_name"],$s);
+
+
 $d = array(
-		  
-	"audio" => "assets".$m	  
-		  
+		  "title" => $t,
+    
+	"audio" => "assets/".$m,	  
+		
+    "image" => "assets/". $s
 		  
 		  );
 
@@ -21,8 +30,7 @@ $j = json_encode($j);
 file_put_contents("data.json",$j);
 
 
-
-
+header("location:../index.php");
 
 
 

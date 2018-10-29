@@ -8,27 +8,18 @@
 <body>
 
     <?php require_once "nav.php" ?>
-
-    <form action="assets/process.php" method="post" enctype="multipart/form-data">
-        <label>tracktitle: <br>
-            <input type="text" name="title">
-        </label><br><br>
-        <label>audio: <br>
-            <input type="file" accept="audio/*" name="audio">
-        </label><br><br>
-        <label>cover: <br>
-            <input type="file" accept="image/*" name="image">
-        </label><br><br>
-        <input type="submit" value="Upload">
-    </form>
-
+    
     <div>
     
     <h1>Johnny Playlist</h1>
     
+        
     
     </div>
-    
+    <br>
+    <div>
+    <h2><a href="upload">Upload</a></h2>
+    </div>
     
     <table>
          <td>Name</td>

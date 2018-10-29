@@ -30,7 +30,7 @@ $j = json_encode($j);
 file_put_contents("data.json",$j);
 
 
-header("location:../index.php");
+header("location:../profile.php");
 
 
 

@@ -16,17 +16,12 @@
 <h2>REGISTRATION</h2>
 <p><span class="error">* required field.</span></p>
 
-<!--
-3 new attributes needed to process user inputs.
-METHOD accepts either 'post' or 'get.' We use post to store data privately.
-ACTION tells the form where to send the data. This will be where the user lands when submit is clicked.
-ENCTYPE specifies how form data should be encoded. We specify Multipart to carry media from the file field.
-Pay attention to the INPUT NAME ATTRIBUTES, 'name', 'email', 'user', 'pw', and 'photo.' This is how we identify the bits of data in the next file.
--->
-<form method="post" action="registerdata.php" enctype ='multipart/form-data'>
-<label>Name
-	<input type="text" name="name" required><span class="error">*</span><br>
-</label>
+<form method="post" action="assets/registerprocess.php" enctype ='multipart/form-data'>
+<label>First Name
+    <input type="text" name="fname" required><span class="error">*</span></label><br>
+    <label>Last Name
+        <input type="text" name="lname" required><span class="error">*</span>
+</label><br>
 <br>
 <label>E-mail
 	<input type="email" name="email" required><span class="error">*</span><br>
@@ -40,7 +35,7 @@ Pay attention to the INPUT NAME ATTRIBUTES, 'name', 'email', 'user', 'pw', and '
 	<input type="password" name="pw" required><span class="error">*</span><br>
 </label>
 <br>
-<input type="submit" name="submit" value="Submit">
+<button type="submit" name="submit" value="Submit">Sumbit</button>
 </form>
 
 </body>
